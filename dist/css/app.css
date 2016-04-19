@@ -7271,3 +7271,9 @@ button.close {
 .input-group-addon:not(:first-child) {
   border-left: 0;
 }
+body {
+  font: 10px;
+}
+h1 {
+  color: green;
+}

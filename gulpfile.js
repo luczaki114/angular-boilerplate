@@ -116,6 +116,7 @@ gulp.task('build', function(done) {
 // Build the  site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
+  gulp.watch(['src/**/*.html'], ['pages', browser.reload]);
   gulp.watch(['src/less/**/*.less'], ['less', browser.reload]);
   gulp.watch(['src/js/**/*.js'], ['javascript', browser.reload]);
   gulp.watch(['src/assets/img/**/*'], ['images', browser.reload]);
